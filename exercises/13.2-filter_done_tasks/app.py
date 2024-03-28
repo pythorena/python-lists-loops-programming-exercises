@@ -9,6 +9,11 @@ tasks = [
 	{ "label": 'Make a trip', "done": False }
 ]
 
+def tareas_hechas(lista):
+    return lista["done"]
+
+resultado=list(filter(tareas_hechas,tasks))
+print(resultado)
 
 # Your code here
 

@@ -7,4 +7,10 @@ incoming_ajax_data = [
 ]
 
 # Your code here
+def data_transformers(lista):
+    nombre = lista["name"]
+    apellido = lista["last_name"]
+    return f"{nombre} {apellido}"
 
+nueva_lista=list((map(data_transformers,incoming_ajax_data)))
+print(nueva_lista)
